@@ -1,0 +1,361 @@
+
+.verdinho-app {
+  display: flex;
+  min-height: 100vh;
+  background: #f5f7f6;
+  color: #17251e;
+}
+
+.verdinho-sidebar {
+  width: 260px;
+  flex-shrink: 0;
+  background: #10271e;
+  color: white;
+  padding: 28px 16px 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.verdinho-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 12px;
+  margin-bottom: 52px;
+}
+
+.verdinho-logo-icon {
+  background: #20b976;
+  border-radius: 12px;
+  padding: 10px;
+  display: flex;
+}
+
+.verdinho-logo strong {
+  display: block;
+  font-size: 25px;
+  letter-spacing: -1px;
+}
+
+.verdinho-logo small {
+  display: block;
+  color: #9bb7aa;
+  font-size: 12px;
+}
+
+.verdinho-menu-label {
+  color: #77998a;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  padding: 0 16px;
+  margin-bottom: 15px;
+}
+
+.verdinho-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.verdinho-nav-item,
+.verdinho-sair {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 13px 15px;
+  width: 100%;
+  border: none;
+  border-radius: 9px;
+  background: transparent;
+  color: #b6c9bf;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: left;
+}
+
+.verdinho-nav-item:hover,
+.verdinho-sair:hover {
+  background: #1d4030;
+  color: #ffffff;
+}
+
+.verdinho-nav-item.ativo {
+  background: #1d6745;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.verdinho-sidebar-bottom {
+  margin-top: auto;
+}
+
+.verdinho-user {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 15px 8px;
+  border-top: 1px solid #335044;
+}
+
+.verdinho-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #2a7d54;
+  font-weight: 700;
+}
+
+.verdinho-user-info {
+  min-width: 0;
+}
+
+.verdinho-user-info strong,
+.verdinho-user-info small {
+  display: block;
+}
+
+.verdinho-user-info small {
+  color: #9bb7aa;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 150px;
+}
+
+.verdinho-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.verdinho-topbar {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  background: white;
+  border-bottom: 1px solid #e5eae7;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.verdinho-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #48745c;
+}
+
+.verdinho-status-ponto {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #25b979;
+}
+
+.verdinho-content {
+  max-width: 1440px;
+  margin: auto;
+  padding: 36px 32px;
+}
+
+.verdinho-heading {
+  margin-bottom: 30px;
+}
+
+.verdinho-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #23875b;
+}
+
+.verdinho-heading h1 {
+  font-size: 30px;
+  margin: 8px 0;
+  letter-spacing: -1px;
+}
+
+.verdinho-heading > div > p:last-child {
+  color: #798980;
+  font-size: 14px;
+}
+
+.verdinho-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.verdinho-stat-card,
+.verdinho-panel {
+  background: white;
+  border: 1px solid #e6ece8;
+  border-radius: 14px;
+  padding: 24px;
+}
+
+.verdinho-stat-top {
+  display: flex;
+  justify-content: space-between;
+  color: #718579;
+  font-size: 13px;
+}
+
+.verdinho-stat-top svg {
+  color: #269765;
+}
+
+.verdinho-stat-card > strong {
+  display: block;
+  font-size: 33px;
+  margin: 18px 0 4px;
+}
+
+.verdinho-stat-card > small {
+  color: #8a9c90;
+}
+
+.verdinho-widgets {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 20px;
+}
+
+.verdinho-panel h2 {
+  font-size: 16px;
+  margin: 0 0 20px;
+}
+
+.verdinho-empty,
+.verdinho-connection,
+.verdinho-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  min-height: 240px;
+  gap: 12px;
+  color: #829389;
+}
+
+.verdinho-empty strong,
+.verdinho-connection strong {
+  color: #243f30;
+}
+
+.verdinho-empty p,
+.verdinho-connection p,
+.verdinho-placeholder p {
+  font-size: 13px;
+  max-width: 310px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.verdinho-connection svg,
+.verdinho-placeholder svg {
+  color: #299d6b;
+}
+
+.verdinho-connection button,
+.verdinho-placeholder button {
+  padding: 11px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #198754;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.verdinho-fechar,
+.verdinho-menu-mobile {
+  display: none;
+}
+
+.verdinho-overlay {
+  display: none;
+}
+
+@media (max-width: 1050px) {
+  .verdinho-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .verdinho-widgets {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .verdinho-sidebar {
+    position: fixed;
+    left: -270px;
+    top: 0;
+    bottom: 0;
+    z-index: 20;
+    transition: left 0.2s;
+  }
+
+  .verdinho-sidebar.aberto {
+    left: 0;
+  }
+
+  .verdinho-overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: #0008;
+    z-index: 10;
+    border: none;
+  }
+
+  .verdinho-menu-mobile,
+  .verdinho-fechar {
+    display: flex;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+  }
+
+  .verdinho-fechar {
+    margin-left: auto;
+  }
+
+  .verdinho-topbar {
+    padding: 0 18px;
+    justify-content: flex-start;
+    gap: 15px;
+  }
+
+  .verdinho-status {
+    margin-left: auto;
+  }
+
+  .verdinho-content {
+    padding: 24px 16px;
+  }
+
+  .verdinho-stats {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .verdinho-stat-card {
+    padding: 14px;
+  }
+
+  .verdinho-stat-card > strong {
+    font-size: 26px;
+  }
+}
