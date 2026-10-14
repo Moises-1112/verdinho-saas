@@ -20,6 +20,7 @@ import Contatos from './Contatos'
 import Listas from './Listas'
 import Campanhas from './Campanhas'
 import Agendamentos from './Agendamentos'
+import WhatsApp from './WhatsApp'
 
 type Pagina =
   | 'dashboard'
@@ -196,6 +197,8 @@ export default function Dashboard({ email, workspaceId, onSignOut }: Props) {
   <Campanhas workspaceId={workspaceId} />
 ) : pagina === 'agendamentos' ? (
   <Agendamentos workspaceId={workspaceId} />
+) : pagina === 'whatsapp' ? (
+  <WhatsApp />
 ) : (
   <section className="verdinho-panel verdinho-placeholder">
               <ShieldCheck size={36} />
